@@ -1,0 +1,319 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1098,2616" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="40">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Reflection</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="108">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="AmazonSequence" sap:VirtualizedContainerService.HintSize="1108,2551" sap2010:WorkflowViewState.IdRef="Sequence_12">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="str_product" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[str_product]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="1046,97" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="Book1.xlsx">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ReadRange>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[str_product]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1046,2292" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="1012,2167" sap2010:WorkflowViewState.IdRef="Sequence_19">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="950,2045" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="700a2c92-896f-42f7-9c3d-8cf36800e0d3" Version="V2" WindowResize="Maximize">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="916,1819" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:Boolean" Name="Exists" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="854,146" sap2010:WorkflowViewState.IdRef="NMouseScroll_2" InteractionMode="HardwareEvents" MovementUnits="5" Version="V3" />
+                    <uix:NCheckState DisplayName="Check App State 'Add to Cart'" sap:VirtualizedContainerService.HintSize="854,474" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="700a2c92-896f-42f7-9c3d-8cf36800e0d3" Version="V3">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,238" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  add-to-cart-butt...'" sap:VirtualizedContainerService.HintSize="338,116" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+                            <ui:Click.CursorPosition>
+                              <ui:CursorPosition Position="Center">
+                                <ui:CursorPosition.OffsetX>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:CursorPosition.OffsetX>
+                                <ui:CursorPosition.OffsetY>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:CursorPosition.OffsetY>
+                              </ui:CursorPosition>
+                            </ui:Click.CursorPosition>
+                            <ui:Click.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0b44d744-e5b2-4acb-b1b5-31504bb13064" InformativeScreenshot="acd689a71100133ec3af19e466125c94" Selector="&lt;webctrl id='add-to-cart-button' tag='INPUT' /&gt;">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:Click.Target>
+                          </ui:Click>
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,248" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:WriteRange AddHeaders="True" DataTable="[str_product]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="338,125" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Sheet1" WorkbookPath="Book1.xlsx">
+                            <ui:WriteRange.StartingCell>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </ui:WriteRange.StartingCell>
+                          </ui:WriteRange>
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.amazon.in/Redmi-Storage-Segment-5000mAh-Battery/dp/B0BBN4DZBD?ref=dlx_deals_gd_dcl_img_0_2079b9ba_dt_sl15_15" DesignTimeRectangle="1011, 358, 183, 29" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Add to Cart'" FullSelectorArgument="&lt;webctrl id='add-to-cart-button' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='add-to-cart-button' tag='INPUT' type='button' class='a-button-input attach-dss-atc' aaname='Add to Shopping Cart' check:text='Add to Cart' /&gt;" Guid="e36c01dd-c2d8-4554-9f34-11befa4084ba" ImageBase64="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" InformativeScreenshot="b4221371c430f84689ebed097d621029.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2*' title='Redmi A1 (Light Blue, 2GB RAM, 32GB Storage) | Segment Best AI Dual Cam | 5000mAh Battery | Leather Texture Design | Android 12 : Amazon.in' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="1012, 396, 181, 29" ElementType="Button" FriendlyName="'INPUT buy-now-button'" FullSelectorArgument="&lt;webctrl id='buy-now-button' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='buy-now-button' tag='INPUT' type='submit' class='a-button-input' aaname='' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NCheckState.Target>
+                    </uix:NCheckState>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="854,61" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,238" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:UiElementExists DisplayName="Element Exists 'INPUT  add-to-cart-butt...'" Exists="[Exists]" sap:VirtualizedContainerService.HintSize="338,116" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                            <ui:UiElementExists.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2d88fc89-7865-4cdd-9168-b3c1f612ab92" InformativeScreenshot="08d7102501a2d71905067cbb23c3cd73" Selector="&lt;webctrl id='add-to-cart-button' tag='INPUT' /&gt;" TimeoutMS="10000" WaitForReady="INTERACTIVE" />
+                            </ui:UiElementExists.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:UiElementExists>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:CommentOut>
+                    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="854,763" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+                      <ui:IfElseIf.ConditionBlocks>
+                        <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                          <ui:IfElseIfBlock BlockType="If" Condition="[Exists= True]">
+                            <ui:IfElseIfBlock.Then>
+                              <Sequence sap:VirtualizedContainerService.HintSize="400,238" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:Click AlterIfDisabled="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="2000" DelayMS="2000" DisplayName="Click 'INPUT  add-to-cart-butt...'" sap:VirtualizedContainerService.HintSize="338,116" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <ui:Click.CursorPosition>
+                                    <ui:CursorPosition Position="Center">
+                                      <ui:CursorPosition.OffsetX>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:CursorPosition.OffsetX>
+                                      <ui:CursorPosition.OffsetY>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:CursorPosition.OffsetY>
+                                    </ui:CursorPosition>
+                                  </ui:Click.CursorPosition>
+                                  <ui:Click.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e2a899b1-94b3-4dfe-ae51-8b35b74ed808" InformativeScreenshot="7a0e1ec8ff98ad4e5062aa3c961aa492" Selector="&lt;html app='chrome.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2*' omit:title='Redmi 10A (Charcoal Black, 4GB RAM, 64GB Storage) | 2 Ghz Octa Core Helio G25 | 5000 mAh Battery | Finger Print Sensor | Upto 5GB RAM with RAM Booster : Amazon.in: Electronics' /&gt;&lt;webctrl id='add-to-cart-button' tag='INPUT' /&gt;">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:Click.Target>
+                                </ui:Click>
+                              </Sequence>
+                            </ui:IfElseIfBlock.Then>
+                          </ui:IfElseIfBlock>
+                          <ui:IfElseIfBlock BlockType="Else">
+                            <ui:IfElseIfBlock.Then>
+                              <Sequence sap:VirtualizedContainerService.HintSize="400,285" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NNavigateBrowser Action="CloseTab" DisplayName="Navigate Browser - Close Tab" sap:VirtualizedContainerService.HintSize="338,91" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_3" Version="V3" />
+                                <ui:Continue sap:VirtualizedContainerService.HintSize="338,32" sap2010:WorkflowViewState.IdRef="Continue_1" />
+                              </Sequence>
+                            </ui:IfElseIfBlock.Then>
+                          </ui:IfElseIfBlock>
+                        </sc:BindingList>
+                      </ui:IfElseIf.ConditionBlocks>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:IfElseIf>
+                    <uix:NNavigateBrowser Action="CloseTab" DisplayName="Navigate Browser - Close Tab" sap:VirtualizedContainerService.HintSize="854,91" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_2" Version="V3" />
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="e8076c0788c3bdb79ff2e11d847d2670.png" Selector="&lt;html app='chrome.exe' title='New Tab' /&gt;" Url="[CurrentRow(&quot;Url&quot;).ToString]" />
+              </uix:NApplicationCard.TargetApp>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>
